@@ -1,10 +1,54 @@
+* {
+    color: var(--main-color);
+}
+
 body {
     margin: 0;
-    background: #d3d3d3;
+    background: #444;
 }
 
 :root {
     --main-color: #fff;
+}
+
+.sign-in-responsive {
+    display: none;
+}
+
+.navbar-custom {
+    background: #333;
+}
+
+.c-about, .c-experience, .c-education, .c-skills, .c-projects {
+    width: 99%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background: #86f;
+}
+
+.logo {
+    max-width: 70px;
+}
+
+.card-info {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-text-sec {
+    font-size: 10px;
+}
+
+.progress-container {
+    background: #53d;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #efefef;
 }
 
 .bg {
@@ -23,7 +67,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     z-index: 2;
     width: 80%;
     padding: 20px;
@@ -31,7 +75,7 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-.custon-section {
+.custom-section {
     padding-top: 50px;
 }
 
@@ -56,3 +100,13 @@ footer {
     color: var(--main-color);
     margin-top: 40px;
 }
+
+@media (min-width:992px){
+    .sign-in-responsive{
+        display: inline-block;
+    }
+
+    .sign-in {
+        display: none;
+    }
+  }
